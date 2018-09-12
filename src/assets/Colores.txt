@@ -1,0 +1,6 @@
+Animus: {
+AzulElectrico:	#5b96d2
+AzulOscuroCrotolamo: ##5374c6
+MoradoMesobas: #5c41b2
+NegroMeEstrujas: #181818
+}

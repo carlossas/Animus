@@ -1,30 +1,116 @@
 .contenedor {
     width: 100%;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     background-color: #222;
 }
 
 .backgroundImage {
-    opacity: 0.1;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.backgroundImage:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: url("../../../assets/img/banners/bg-anime.jpg");
+    opacity: .1;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.row-first {
+    padding-top: 1rem;
 }
 
 .logo {
     width: 150px !important;
     margin: auto;
+    display: block
 }
 
-.contenedorLogo {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
+.titletext {
+    font-size: 40px;
 }
 
-.center-items {
+.flechaIcon {
+    font-size: 30px !important;
+}
+
+.text-btn-unirte {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-unirte {
     display: block;
     margin: auto;
+    width: 100%;
+    height: 6rem;
 }
+
+
+/* BREAKPOINTS MOVIL*/
+
+@media screen and (min-width: 250px) and (max-width: 599px) {
+    .btn-iniciar {
+        width: 100%;
+    }
+    .row-first {
+        padding-top: 0;
+    }
+    .logo {
+        width: 100px;
+        padding-top: 3rem;
+    }
+    .titletext {
+        font-size: 20px;
+    }
+    .subtext {
+        font-size: 14px;
+    }
+    .flechaIcon {
+        font-size: 20px !important;
+    }
+    .text-btn-unirte {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .btn-unirte {
+        width: 70%;
+        height: 4rem;
+    }
+}
+
+
+/* FIN MOVIL BREAKPOINTS*/
+
+
+/* BREAKPOINTS MOVIL HORIZONTAL*/
+
+@media screen and (min-width: 600px) and (max-width: 760px) {}
+
+
+/* FIN BREAKPOINTS MOVIL HORIZONTAL*/
+
+
+/* BREAKPOINTS TABLET VERTICAL*/
+
+@media screen and (min-width: 761px) and (max-width: 999px) {}
+
+
+/* FIN BREAKPOINTS TABLET VERTICAL*/
+
+
+/* BREAKPOINTS TABLET HORIZONTAL*/
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {}
+
+
+/* FIN BREAKPOINTS TABLET HORIZONTAL*/
