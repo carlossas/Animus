@@ -1,0 +1,30 @@
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+}
+
+.backgroundImage {
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../../../assets/img/banners/bg-anime.jpg");
+}
+
+.logo {
+    width: 150px !important;
+    margin: auto;
+}
+
+.contenedorLogo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+
+.center-items {
+    display: block;
+    margin: auto;
+}

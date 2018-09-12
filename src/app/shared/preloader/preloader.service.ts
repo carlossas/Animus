@@ -21,6 +21,6 @@ export class PreloaderService {
     this.salidaAnimation = true;
     setTimeout(() => {
       this.loading$ = of(false);
-    }, 800);
+    }, 850);
   }
 }
