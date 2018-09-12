@@ -1,0 +1,5 @@
+<!-- PRELOADER -->
+<app-loading *ngIf="preloaderS.loading$ | async"></app-loading>
+<!-- END PRELOADER -->
+
+<router-outlet *ngIf="(preloaderS.loading$ | async) == false"></router-outlet>

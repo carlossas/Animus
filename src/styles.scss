@@ -1,0 +1,37 @@
+/*FONTS*/
+
+@font-face {
+    font-family: HWYGWDE;
+    src: url(./assets/fonts/HWYGWDE.TTF);
+}
+
+.font-logo {
+    font-family: HWYGWDE !important;
+}
+
+
+/*GLOBAL STYLES*/
+
+.justify {
+    text-align: justify;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.break-word {
+    word-wrap: break-word;
+}
